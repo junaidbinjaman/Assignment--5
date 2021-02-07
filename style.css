@@ -1,0 +1,204 @@
+body {
+    background: #95a5a6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-area h1 {
+    color: white;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.input-form {
+    display: flex;
+}
+
+.input-form input {
+    border: none;
+    padding: 10px;
+    width: 440px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.input-form input:focus {
+    outline: none !important;
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.search-btn:focus {
+    outline: none !important;
+    border: 1px solid #719ECE;
+}
+
+.search-btn {
+    padding: 11px;
+    width: 80px;
+    border: none;
+    background: white;
+    box-shadow: 5px 5px 10px #808080;
+    cursor: pointer;
+}
+
+.search-btn i {
+    font-size: 20px;
+    color: #808080
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.322);
+    z-index: 3;
+    display: none;
+}
+
+.popup-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-containet {
+    background: white;
+    width: 580px;
+    height: 380px;
+    opacity: 100;
+    z-index: 10;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4px;
+    position: relative;
+}
+
+.popup-containet h1 {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.popup-containet>i {
+    color: red;
+    font-size: 50px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.search-result {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.search-meals {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 40px;
+}
+
+.search-meal {
+    width: 302px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 2 5 10px gray;
+    cursor: pointer;
+}
+
+.search-meal img {
+    width: 298px;
+    height: 300px;
+    border: 2px solid aliceblue;
+}
+
+.meal-name {
+    color: #333;
+    text-align: center;
+}
+
+.food-detail-popup {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.322);
+    z-index: 3;
+    display: none;
+}
+
+.foodContainer {
+    background: white;
+    width: 480px;
+    height: 580px;
+    opacity: 100;
+    z-index: 10;
+    margin-top: 11%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    position: relative;
+}
+
+.foodContainer img {
+    width: 99%;
+    height: 300px;
+    border: 2px solid aliceblue;
+    text-align: center;
+}
+
+.foodContainer h2 {
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+.foodPopupClose {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 20px;
+    cursor: pointer;
+    background: white;
+    padding: 5px 10px;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    color: #333;
+}
+
+li>.fas {
+    color: rgba(255, 0, 0, 0.609);
+    margin-right: 15px;
+}

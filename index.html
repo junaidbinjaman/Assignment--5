@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome link-->
+    <script src="https://kit.fontawesome.com/085eb87446.js" crossorigin="anonymous"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <!-- external css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Hungry Monster</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- search area start -->
+        <div class="search-area">
+            <h1>Find Your Favorite Food</h1>
+            <form class="input-form">
+                <input class="search-input" type="text" placeholder="Search Food">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="search-results" id="search-results"></div>
+        <!-- search area end -->
+
+        <!-- result area start -->
+        <div class="search-meals"></div>
+        <!-- result area end -->
+
+        <!-- food detail in popup start -->
+        <div id="foodDetailPopup" class="food-detail-popup"></div>
+        <!-- food detail in popup end -->
+
+        <!-- empty search input popup strat -->
+        <div class="popup">
+            <div class="popup-position">
+                <div class="popup-containet">
+                    <div class="popup-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <i class="fas fa-times"></i>
+                    <h1>Please type a food name to search</h1>
+                </div>
+            </div>
+        </div>
+        <!-- empty search input popup end -->
+    </div>
+
+    <!-- external js link -->
+    <script src="main.js"></script>
+</body>
+
+</html>
